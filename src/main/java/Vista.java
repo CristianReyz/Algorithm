@@ -17,7 +17,7 @@ import java.util.Objects;
 
 public class Vista extends JFrame{
 
-    private static int longitudDeRandom = 10;
+    private static int longitudDeRandom = 5;
     private JButton calcular = new JButton("CALCULAR");
     private JButton ordenar = new JButton("ORDENAR");
     private JButton random = new JButton("RANDOM");
@@ -36,6 +36,7 @@ public class Vista extends JFrame{
     private JLabel etiquetaInteractiva1 = new JLabel();
     private JLabel etiquetaInteractiva2 = new JLabel();
     private JTextField cajaInteractiva = new JTextField();
+    private JTextField longitud = new JTextField();
 
 
     private JTextField cociente1Text = new JTextField();
@@ -77,6 +78,9 @@ public class Vista extends JFrame{
         random.setForeground(Color.BLACK);
         random.setBackground(Color.gray);
         random.setBounds(400, 25, 100, 25);
+
+
+
 
         areaTextoSalida = new JTextArea();
         areaTextoSalida.setFont(fuente);
@@ -229,7 +233,7 @@ public class Vista extends JFrame{
             case "TRIANGULO DE PASCAL":
                 numero = Integer.parseInt(cajaInteractiva.getText());
                 TrianguloPascal triangulo = new TrianguloPascal();
-                areaTextoSalida.append(triangulo.pascalTime(numero , numero, metodoSeleccionado));
+                areaTextoSalida.append(triangulo.pascalTime(numero*2 , numero, metodoSeleccionado));
                 break;
             case "MAXIMO COMUN DIVISOR":
                 numero = Integer.parseInt(cajaInteractiva.getText());

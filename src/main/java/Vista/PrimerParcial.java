@@ -1,3 +1,4 @@
+package Vista;
 
 import Modelo.Recursividad.*;
 import Modelo.Sort.Iterativo.*;
@@ -15,7 +16,7 @@ import java.awt.*;
 import java.util.Arrays;
 import java.util.Objects;
 
-public class Vista extends JFrame{
+public class PrimerParcial extends JFrame{
 
     private static int longitudDeRandom = 5;
     private JButton calcular = new JButton("CALCULAR");
@@ -49,12 +50,11 @@ public class Vista extends JFrame{
     JFreeChart graficaVectorDesordenado;
     ChartPanel panelGraficaVectorDesordenado;
 
-    public Vista(){
-        super("Programacion Avanzada");
+    public PrimerParcial(){
+        super("Programacion Avanzada - Primer Parcial");
         this.setSize(1020, 720);
         this.setLocationRelativeTo(null);
         this.setResizable(false);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         cargarComponentes();
     }
 
@@ -140,6 +140,7 @@ public class Vista extends JFrame{
         panel.add(cajaInteractiva);
 
         panel.add(cociente1Text);
+
 
 
         panel.setBackground(Color.darkGray);

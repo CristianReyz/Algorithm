@@ -1,7 +1,9 @@
+import Vista.Menu;
+
 public class mando {
 
     public static void main(String[] args) {
-        Vista ventana = new Vista();
+        Menu ventana = new Menu();
         ventana.setVisible(true);
     }
 }
